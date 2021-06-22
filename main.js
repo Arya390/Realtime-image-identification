@@ -1,9 +1,9 @@
 function setup() {
-    canvas = createCanvas(300, 300);
+    canvas = createCanvas(250, 250);
     canvas.center();
     video = createCapture(VIDEO);
     video.hide();
-    classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/v_sl95BzE/model.json', modelLoaded);
+    classifier = ml5.imageClassifier('MobileNet', modelLoaded);
 }
 
 function modelLoaded() {
